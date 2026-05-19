@@ -1,5 +1,4 @@
-# DNS-Resolver-Analysis
-This script is an adaptation of the original work by Kris Lowet  
+The script 'test_resolvers' is an adaptation of the original work by Kris Lowet  
 (https://gist.github.com/KrisLowet/675ba34e682c6d2afbc53fc317b41e85)  
 for the development of my undergraduate thesis project.
 
