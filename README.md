@@ -106,7 +106,7 @@ O script inicia verificando as dependências necessárias, baixa e consolida as 
 
 Conforme apresentado no artigo, os resolvedores testados, as listas de domínios utilizadas e os parâmetros de execução são constantes e estão configurados diretamente no início do script `test_resolvers.sh`, nas variáveis `ns_sp_array`, `ns_ip_array` e nas URLs de download das listas.
 
-O script, por padrão, baixa e testa as listas mais recentes de domínios maliciosos disponíveis no momento da execução. Caso seja necessário reproduzir o teste com uma lista de domínios fixa, deve-se substituir as URLs de download no início do script pelas URLs dos arquivos desejados antes da execução.
+O script, por padrão, baixa e testa as listas atualizadas de domínios maliciosos disponíveis no momento da execução. Caso seja necessário reproduzir o teste com uma lista de domínios fixa, deve-se substituir as URLs de download no início do script pelas URLs dos arquivos desejados antes da execução.
 
 Considerando que o objetivo do experimento é analisar a capacidade de bloqueio de cada resolvedor, os resultados de latência e o total de domínios testados variam conforme a data de execução, uma vez que as listas são atualizadas diariamente, e conforme a rede utilizada pela máquina que executa o teste. As especificações de hardware e software da máquina utilizada no artigo estão apresentadas no mesmo.
 
@@ -120,7 +120,7 @@ Este script realiza o download das listas de domínios maliciosos, mede a latên
 
 ## Reivindicação "Taxa de bloqueio de domínios maliciosos por resolvedor"
 
-Verifica-se que os resolvedores com filtro de segurança bloqueiam uma parcela significativa dos domínios maliciosos testados, enquanto o resolvedor sem filtro resolve normalmente a grande maioria deles, conforme apresentado no artigo.
+Verifica-se que os resolvedores com filtro de segurança bloqueiam uma parcela significativa dos domínios maliciosos testados, conforme apresentado no artigo.
 
 O script deve ser capaz de classificar, para cada domínio e cada resolvedor, se houve bloqueio ou resolução normal, permitindo o cálculo da taxa de bloqueio por resolvedor.
 
@@ -140,4 +140,4 @@ Os resultados de taxa de bloqueio e latência variam conforme a data de execuç�
 
 # LICENSE
 
-Este projeto está licenciado sob a licença MIT. Consulte o arquivo LICENSE, disponível em `https://github.com/jaquelinegon/DNS-Resolver-Analysis/blob/main/LICENSE`, para mais detalhes.
+Este projeto está licenciado sob a Licença GNU - veja o arquivo LICENSE para mais detalhes.
