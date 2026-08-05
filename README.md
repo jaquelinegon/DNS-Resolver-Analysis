@@ -10,7 +10,7 @@ Este repositório é composto por um único script autocontido:
 
 Ao final da execução, o script gera dois arquivos na pasta de execução:
 
-- `dnsblock_hosts_<data>.txt`: lista consolidada e deduplicada de domínios testados, com sua respectiva fonte de origem.
+- `dnsblock_hosts_<data>.txt`: lista consolidada de domínios testados, com sua respectiva fonte de origem.
 - `dnsblock_result_<data>.csv`: resultado dos testes, no formato `domínio;fonte;resolvedor_1;resolvedor_2;...`, em que cada coluna de resolvedor contém o IP retornado, sendo esta célula vazia quando o domínio é bloqueado.
 
 # Selos Considerados
