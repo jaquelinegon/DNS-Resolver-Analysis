@@ -1,4 +1,4 @@
-# DNS Resolver Blackhole Test
+# Teste de Bloqueio DNS de Resolvedores
 
 Este artefato acompanha o artigo relacionado à avaliação de resolvedores DNS públicos quanto à sua capacidade de bloquear domínios maliciosos. O script `test_resolvers.sh` automatiza a coleta de listas de domínios maliciosos, consulta cada domínio nos diferentes resolvedores DNS por meio do comando `dig` e registra se o domínio foi bloqueado ou resolvido normalmente, gerando um relatório em formato CSV com os resultados comparativos.
 
